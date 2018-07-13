@@ -31,9 +31,9 @@ $ pip install -r requirements.txt
 
 Once you've installed the dependencies, it's time to run the script:
 ```
-python main.py
+$ python main.py
 ```
-The script was written to be run when the services are not working. Once all of the services are operational, a single sms will be send to each user and the script will stop executing. 
+The script was written to be run when the services are down. Once all of the services are up and running, a single sms will be sent to each user and the script will stop executing.
 
 ## Built With
 
