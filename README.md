@@ -23,9 +23,26 @@ $ cd fortnite-monitor
 
 install dependencies from requirements.txt:
 ```
-# (twilio, requests, lxml, bs4, tqdm)
 $ pip install -r requirements.txt
 ```
+
+### Config
+
+Don't forget to add 7-digit cell phone numbers to the users list, in addition to filling out your Twilio authorization details (requires twilio funds) and setting the time between each update (in seconds):
+```
+# 7-digit cell phone numbers (strings)
+users = ['']
+
+# Twilio Auth
+accountSID = ''
+authToken = ''
+myTwilioNumber = ''
+twilioCli = Client(accountSID, authToken)
+
+# seconds between updates
+IDLE_TIME = 10
+```
+
 
 ## Running the script
 
